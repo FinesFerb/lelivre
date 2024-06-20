@@ -1,0 +1,265 @@
+.container_main-list {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+.main_list{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 10px;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.title_h1{
+    font: normal 22px ALS Sirius,Arial,Helvetica Neue,Helvetica,sans-serif;
+    letter-spacing: .15px;
+    color: #000;
+    font-weight: 600;
+}
+.capt{
+    display: flex;
+    background: #f5f5f5;
+    border-radius: 20px;
+}
+
+.filter_btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.filter_img {
+    width: 30px;
+}
+
+.form_select {
+    outline: none;
+    border: 1px solid #d7d6d5;
+}
+
+.span_search{
+    padding: 10px 20px 10px;
+}
+.flex-listok{
+    display: flex;
+    flex-direction: row;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards_filter__current {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0a1e78;
+    max-width: 200px;
+}
+
+.cards_filter__current form {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards_filter__current form span {
+    width: 90%;
+    text-align: center;
+    color: white;
+}
+
+.cards_filter__current form button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.cards_filter__current form img {
+    width: 15px;
+}
+
+.filters {
+    width: 260px;
+    display: flex;
+}
+
+.filters_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filters_item form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filters_item button{
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    background: #0a1e78;
+    color: white;
+}
+
+@media (min-width: 1025px) {
+    .container_filter-modal {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .filters {
+        display: none;
+    }
+}
+
+.h1_format{
+    font: normal 22px ALS Sirius,Arial,Helvetica Neue,Helvetica,sans-serif;
+    letter-spacing: .15px;
+    color: #000;
+    font-weight: 600;
+}
+
+
+
+/*card*/
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 10px 0 0 0;
+}
+
+.card{
+    position: relative;
+    box-sizing: border-box;
+    width: 215px;
+    padding: 20px 12px 12px;
+    border-radius: 12px;
+    border: none;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .card {
+        width: 180px;
+    }
+}
+
+.dropdown {
+    display: flex;
+    justify-content: end;
+}
+
+.label-category{
+    background-color: #6262d9;
+    position: relative;
+    padding: 0 6px 2px;
+    border-radius: 6px 6px 0 0;
+    font: normal 6px ALS Sirius,Arial,Helvetica Neue,Helvetica,sans-serif;
+    letter-spacing: .4px;
+    color: #fff;
+    line-height: 18px;
+}
+.main-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.img-card{
+    position: relative;
+    display: block;
+    margin-bottom: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.08);
+    max-height: 312px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.adaptive-img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: pointer;
+}
+.title-card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.name-book{
+    margin-bottom: 4px;
+    color: #13192e;
+    word-break: break-word;
+    font: 600 15px ALS Sirius,Arial,Helvetica Neue,Helvetica,sans-serif;
+    letter-spacing: .25px;
+}
+.aftor{
+    display: inline;
+    font: 600 normal 14px/20px ALS Sirius,Arial,Helvetica Neue,Helvetica,sans-serif;
+    letter-spacing: .25px;
+    color: #5a617c;
+    word-break: break-word;
+    margin-bottom: 4px;
+}
+.info-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: calc(100% + 8px);
+    margin: -8px 0 8px -8px;
+}
+.read-card-icon{
+    margin: 8px 0 0 8px;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.estimation-card{
+    display: flex;
+    align-items: center;
+    margin: 8px 0 0 8px;
+}
+.star-book{
+    width: 14px;
+    height: 14px;
+}
+.estimation-book{
+    margin-left: 4px;
+    color: #f50;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+}
+.number-reading{
+    margin-left: 4px;
+    color: #5a617c;
+    font-size: 12px;
+    line-height: 16px;
+}
+.img-book{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: fill;
+    object-fit: fill;
+}
+a{
+    text-decoration: none;
+}
+.list-product{
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+}
