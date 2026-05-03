@@ -39,10 +39,10 @@
                 </div>
 
                 <!-- reCaptcha v2 -->
-                <div class="form-group mt-4">
-                    {!! NoCaptcha::renderJs() !!}
-                    {!! NoCaptcha::display() !!}
-                </div>
+                <!-- <div class="form-group mt-4">
+                    {{-- {!! NoCaptcha::renderJs() !!}
+                    {!! NoCaptcha::display() !!} --}}
+                </div> -->
 
                 <!-- Remember Me -->
                 <div class="block mt-4">

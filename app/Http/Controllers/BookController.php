@@ -69,6 +69,7 @@ class BookController extends Controller
 
         return $response;
     }
+    
     public function ratingsSummary(Book $book)
     {
         $averageRating = $book->averageRating();
