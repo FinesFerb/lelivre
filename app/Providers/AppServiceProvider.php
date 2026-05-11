@@ -25,7 +25,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $categories = Category::all();
-        View::share('categories', $categories);
+        View::composer([
+            'pages.main', 'pages.search', 'admin.categories.index', 
+            'admin.books.edit', 'admin.books.create', 
+            'partials.header', 'partials.footer'], function ($view) {
+            // Лучше добавить кэширование
+            $categories = Cache::remember('site_categories', 3600, function () {
+                return Category::all();
+            });
+            $view->with('categories', $categories);
+        });
     }
 }
