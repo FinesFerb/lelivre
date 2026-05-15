@@ -1,4 +1,13 @@
-<x-guest-layout>
+@extends('layouts.index')
+@section('styles')
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <!-- Scripts -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+@endsection
+@section('content')
+<div class="min-h-screen flex flex-col sm:justify-center items-center bg-gray-100 dark:bg-gray-900">    
     <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
         {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
     </div>
@@ -22,4 +31,5 @@
             </x-primary-button>
         </div>
     </form>
-</x-guest-layout>
+</div>
+@endsection
